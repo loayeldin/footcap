@@ -1,3 +1,13 @@
+# footCap description
+
+The e-commerce project you're working on includes essential functionalities for both users and admins. Users can browse products, add them to their cart, proceed to checkout where they input their information, and submit their order. On the admin side, there's a panel for managing orders, viewing details, and updating order statuses. This setup ensures a seamless experience for both purchasing customers and administrative staff, facilitating efficient order management and customer service using firbase.
+
+
+# Admin Account
+
+    email:loay66@gmail.com 
+    password:Loayelden1$
+    
 # ECommerceFootcap
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
