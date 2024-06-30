@@ -1,0 +1,76 @@
+<div class="checkout">
+   
+
+<div class="container">
+    
+    <div class="mainWrapper" >
+		<div class="statusBar">
+            <span class="pBar" [style.width]="getProgressBarWidth()"></span>
+
+            <div class="node n0 done nConfirm0">
+				<div class="main done m0 done nConfirm0 d-flex justify-content-center align-items-center">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffff" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>                </div>
+				<span class="text t0 done nConfirm0">Address</span>
+			</div>
+
+			<div class="node n1 nConfirm1">
+				<div class="main m1 nConfirm1 d-flex justify-content-center align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffff" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+
+                </div>
+				<span class="text t1 nConfirm1">payment</span>
+			</div>
+
+
+			<div class="node n2 nConfirm2">
+				<div class="main m2 nConfirm2 d-flex justify-content-center align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffff" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+
+                </div>
+				<span class="text t2 nConfirm2">Review</span>
+			</div>
+
+
+			<!-- <div class="node n3 nConfirm3">
+				<div class="main m3 nConfirm3"></div>
+				<span class="text t3 nConfirm3">Payment</span>
+			</div>
+			<div class="node n4 nConfirm4">
+				<div class="main m4 nConfirm4"></div>
+				<span class="text t4 nConfirm4">Complete</span>
+			</div> -->
+		</div>
+
+                
+		
+	</div>
+
+
+
+
+    <div class="checkout-box my-4">
+
+		<div class="border border-danger p-2 d-block my-2 text-danger mx-4 d-flex">
+
+			<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f24a02" d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg> 
+			<span class="mx-3">you should save your data before go to next stage</span>
+
+		</div>
+
+            
+        <router-outlet></router-outlet>
+    
+    
+        <div class="buttonHolder">
+            <div class="button b-back disabled" id="back" [class.disabled]="!isBackButtonEnabled" (click)="onBackClick()">Back</div>
+            <div class="button b-next" id="next" [class.disabled]="!formValid || !isNextButtonEnabled " (click)="onNextClick()"> {{ state === 2 ? 'Submit Order' : 'Next' }}</div>
+        </div>
+    </div>
+   
+ 
+
+
+    
+</div>
+</div>

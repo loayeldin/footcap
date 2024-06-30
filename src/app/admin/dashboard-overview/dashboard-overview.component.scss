@@ -1,0 +1,41 @@
+
+.dashboard-info .users{
+
+    background: linear-gradient(to right, #ffbf96, #fe7096) !important ;
+    color: white;
+    min-height: 170px;
+    min-width: 300px;
+    flex: 1;
+
+}
+.dashboard-info .orders{
+
+    background: linear-gradient(to right, #90caf9, #047edf 99%) !important;    color: white;
+    flex: 1;
+    color: white;
+    min-width: 300px;
+    min-height: 170px;
+    
+}
+
+.dashboard-info .sales{
+
+    background: linear-gradient(to right, #84d9d2, #07cdae) !important;
+        color: white;
+        min-height: 170px;
+        min-width: 300px;
+        flex: 1;
+
+}
+.dashboard-info h5{
+    text-transform: capitalize;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+.dashboard-info p{
+    font-size: 27px;
+}
+.dashboard-info svg{
+    width: 47px;
+    height: 47px;
+}

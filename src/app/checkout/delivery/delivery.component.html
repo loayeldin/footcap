@@ -1,0 +1,87 @@
+
+
+<form [formGroup] = "cardForm" (ngSubmit)="submit()" class="row g-3">
+    <h5>
+        Your credit and debit cards : 
+    </h5>
+    
+    <div class="form-group col-md-5 my-3">
+        <label  class="form-label text-capitalize">Card number   </label>
+        <input type="text" class="form-control " formControlName="cardNumber">
+
+        <span *ngIf = "cardForm.get('cardNumber')?.invalid == true && cardForm.get('cardNumber')?.touched == true" class="border border-danger p-2 d-block my-2 text-danger"> 
+                
+            <ng-container *ngFor="let error of cardForm.get('cardNumber')?.errors | keyvalue">
+                <ng-container class="text-capitalize" *ngIf="error.key === 'required'">
+                    card number is required.
+                </ng-container>
+                <ng-container class="text-capitalize" *ngIf="error.key === 'pattern'">
+                    Invalid card number format.
+                    
+                </ng-container>
+                
+              
+              </ng-container>
+        </span>
+       
+    </div>
+
+    <div class="form-group col-md-5 offset-2">
+        <label  class="form-label text-capitalize">Name on card</label>
+        <input type="text" class="form-control " formControlName="cardName" >
+
+        <span *ngIf = "cardForm.get('cardName')?.invalid == true && cardForm.get('cardName')?.touched == true" class="border border-danger p-2 d-block my-2 text-danger"> 
+                
+            card Name is required
+        </span>
+       
+    </div>
+
+    <div class="form-group col-md-5">
+        <label  class="form-label text-capitalize">Security Code (CVV/CVC)</label>
+        <input type="text" class="form-control " formControlName="securityCode" >
+
+        <span *ngIf = "cardForm.get('securityCode')?.invalid == true && cardForm.get('securityCode')?.touched == true" class="border border-danger p-2 d-block my-2 text-danger"> 
+                
+            <ng-container *ngFor="let error of cardForm.get('securityCode')?.errors | keyvalue">
+                <ng-container class="text-capitalize" *ngIf="error.key === 'required'">
+                    security Code is required.
+                </ng-container>
+                <ng-container class="text-capitalize" *ngIf="error.key === 'pattern'">
+                    Invalid security Code format.
+                    
+                </ng-container>
+                
+              
+              </ng-container>
+        </span>
+       
+    </div>
+
+
+    <div class="form-group col-md-5 offset-2">
+        <label  class="form-label text-capitalize">Expiration date</label>
+        <input type="text" class="form-control " placeholder="MM/DD" formControlName="expireDate" >
+        <span *ngIf = "cardForm.get('expireDate')?.invalid == true && cardForm.get('expireDate')?.touched == true" class="border border-danger p-2 d-block my-2 text-danger"> 
+                
+            <ng-container *ngFor="let error of cardForm.get('expireDate')?.errors | keyvalue">
+                <ng-container class="text-capitalize" *ngIf="error.key === 'required'">
+                    expireDate is required.
+                </ng-container>
+                <ng-container class="text-capitalize" *ngIf="error.key === 'pattern'">
+                    Invalid expireDate format.
+                    
+                </ng-container>
+                
+              
+              </ng-container>
+        </span>
+       
+    </div>
+
+    <div class=" text-center">
+        <button type="submit" class="btn btn-danger" [disabled]="!cardForm.valid">save</button>
+    
+    </div>
+
+</form>

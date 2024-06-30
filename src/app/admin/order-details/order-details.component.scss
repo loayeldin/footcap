@@ -1,0 +1,37 @@
+.userInfo,.status{
+    border: 1px solid #cfd2d6;
+    padding: 15px 20px;
+    box-sizing: border-box; 
+}
+.order-details{
+    
+  
+    border: none
+   
+}
+.userInfo h6{
+    color:#a1a4aa ;
+    font-size: 15px !important;
+    text-transform: capitalize;
+}
+.userInfo p{
+    font-weight: bold;
+}
+
+.status h6{
+    font-size: 15px !important;
+}
+
+.products{
+   
+    border: 1px solid #cfd2d6;
+}
+hr{
+    color: #979a9e;
+   border-top-width: 2px;
+}
+.product-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}

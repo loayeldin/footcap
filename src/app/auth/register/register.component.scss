@@ -1,0 +1,83 @@
+
+
+
+
+.header
+{
+  
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.header .icons
+{
+
+}
+.header h4{
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 500;
+ 
+
+}
+ .header .icons .google
+{
+    padding: 10px;
+    background-color: rgb(76, 76, 214);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    min-width: 260px;
+    align-items: center;
+    cursor: pointer;
+}
+ .header .icons .facebook , .header .icons .twitter
+{
+    padding: 10px 15px;
+    background-color: #e8e8e9;
+    cursor: pointer;
+}
+
+.or
+{
+    color: #9c9c9e;
+    left: 50%;
+    position: relative;
+}
+.or::after
+{
+   content: "";
+   left: 120%;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+    width:180px ;
+    height: 1px;
+    background-color: #9c9c9e ;
+}
+.or::before
+{
+   content: "";
+   right: 120%;
+  
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   width:180px ;
+   height: 1px;
+    background-color: #9c9c9e ;
+}
+
+
+
+
+
+
+
+form .btn-danger
+{
+    background-color: var(--main-color) !important;
+    padding: 5px 50px;
+    font-size: 18px;
+}
+

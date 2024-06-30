@@ -1,0 +1,209 @@
+
+.navbar
+{
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 2px 10px hsla(0, 0%, 0%, 0.1);
+    z-index: 1000;
+
+}
+.navbar-brand
+{
+    cursor: pointer;
+}
+.navbar .navbar-menu
+{
+    background-color: var(--main-color);
+    padding: 5px;
+    display: none;
+    cursor: pointer;
+}
+.navbar-items {
+    height: 100%;
+    
+}
+
+
+.navbar-items ul {
+    display: flex;
+    align-items: center; /* Center the child elements vertically */
+    height: 100%; /* Ensure the ul takes the full height */
+    margin: 0;
+
+
+}
+.navbar-items ul li
+{
+    list-style-type: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 15px;
+    color: hsl(217, 28%, 9%);;
+    transition: .5s all;
+    font-weight: 500;
+
+}
+.navbar-items ul li:hover
+{
+ 
+    color: var(--main-color);
+
+}
+
+.navbar-icons svg
+{
+
+    margin-right: 20px;
+    cursor: pointer;
+}
+.navbar-icons .likes
+{
+    position: relative;
+}
+.navbar-icons .counter
+{
+    width: 17px;
+    height: 17px;
+    background-color: var(--main-color);
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 11px;
+    position: absolute;
+    top: -8px;
+    right: 9px;
+
+}
+
+
+
+
+
+
+
+/**********************responsive navbar*******************/
+.overlay
+{
+    background-color: hsla(0, 0%, 0%, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: -100%;
+  z-index: 999999;
+  
+}
+.navbar-responsive
+{
+    transition: left .7s; /* Apply transition to the left property */
+    position: absolute;
+    left: -100%; // for animation
+    width: 250px;
+    height: 100%;
+    background-color: white;
+}
+
+.navbar-responsive .navbar-brand
+{
+    
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    background-color: hsla(185, 75%, 45%, 0.1);
+    min-height: 150px;
+}
+.navbar-responsive .close
+{
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    top:15%;
+}
+
+.navbar-responsive .navbar-items {
+    height: auto;
+    
+}
+
+
+.navbar-responsive .navbar-items ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Center the child elements vertically */
+    margin: 0;
+    margin-top: 30px;
+
+}
+.navbar-responsive .navbar-items ul li
+{
+    list-style-type: none;
+    font-size: 17px;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 10px;
+    width: 70%;
+    color: hsl(217, 28%, 9%);;
+    font-weight: 500;
+    transition: .5s all;
+
+}
+.navbar-responsive .navbar-items ul li:hover
+{
+    color: var(--main-color);
+}
+.navbar-responsive .navbar-items ul li:not(:last-child) {
+    border-bottom: 1px solid hsl(0, 0%, 88%);;
+}
+
+.navbar-responsive .navbar-icons
+{
+    margin: 30px 15px;
+}
+.navbar-responsive .navbar-icons .counter-responsive
+{
+    width: 20px;
+    height: 20px;
+    background-color: var(--main-color);
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 13px;
+
+    
+}
+.navbar-responsive .navbar-icons .navbar-icons-container
+{
+    cursor: pointer;
+    transition: .5s all;
+}
+.navbar-responsive .navbar-icons .navbar-icons-container:hover{
+
+color: var(--main-color);
+}
+.money
+{
+    color: var(--main-color);
+    margin-left: 4px;
+}
+
+
+@media (max-width:992px)
+{
+    
+    .navbar
+    {
+        padding: 15px;
+    }
+    .navbar .navbar-items, .navbar .navbar-icons
+    {
+        display: none;
+    } 
+    .navbar .navbar-menu
+    {
+        display: block;
+       
+    }
+}

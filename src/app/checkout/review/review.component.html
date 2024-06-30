@@ -1,0 +1,118 @@
+
+
+            
+    <form class="row gap-3">
+
+        
+
+        
+
+        
+                    
+
+        <div class="form-group col-md-5">
+            <label  class="form-label text-capitalize">firt Name</label>
+            <input type="text" class="form-control " disabled  [value]="this.AddressData.firstName" >
+            
+        </div>
+
+
+        <div class="form-group col-md-5  offset-1">
+            <label  class="form-label text-capitalize">last name</label>
+            <input type="text" class="form-control " disabled  [value]="this.AddressData.lastName" >
+            
+        </div>
+
+        <div class="form-group col-md-5  " >
+            <label  class="form-label text-capitalize">phone number</label>
+           
+               
+
+                <input type="tel" class="form-control  " disabled  [value]="this.AddressData.phoneNumber" >
+               
+        </div>
+
+
+
+
+        <div class="form-group col-md-5  offset-1 ">
+            <label  class="form-label text-capitalize">additional phone number</label>
+           
+              
+
+            <input type="tel" class="form-control ms-2 "  disabled  [value]="this.AddressData.additionalPhoneNumber" >
+                
+              
+        </div>
+
+
+
+
+        <div class="form-group col-md-11">
+            <label class="form-label text-capitalize">Street address</label>
+            <input type="text" class="form-control "  disabled  [value]="this.AddressData.streetAdress" >
+           
+        </div>
+
+
+        <div class="form-group col-md-5">
+            <label class="form-label text-capitalize">city</label>
+            <input type="text" class="form-control "  disabled  [value]="this.AddressData.city"  >
+           
+        </div>
+
+        
+        <div class="form-group col-md-5 offset-1">
+            <label  class="form-label text-capitalize">District</label>
+            <input type="text" class="form-control "  disabled  [value]="this.AddressData.District" >
+           
+        </div>
+
+
+        <div class="form-group col-md-5 ">
+            <label  class="form-label text-capitalize">Card number   </label>
+            <input type="text" class="form-control "  disabled  [value]="this.payment.cardNumber">
+    
+          
+           
+        </div>
+    
+        <div class="form-group col-md-5 offset-1 ">
+            <label  class="form-label text-capitalize">Name on card</label>
+            <input type="text" class="form-control "  disabled  [value]="this.payment.cardName"  >
+    
+            
+           
+        </div>
+    
+        <div class="form-group col-md-5">
+            <label  class="form-label text-capitalize">Security Code (CVV/CVC)</label>
+            <input type="text" class="form-control " disabled  [value]="this.payment.securityCode" >
+    
+            
+        </div>
+    
+    
+        <div class="form-group col-md-5 offset-1" >
+            <label  class="form-label text-capitalize">Expiration date</label>
+            <input type="text" class="form-control "  disabled  [value]="this.payment.expireDate" >
+            
+           
+        </div>
+    
+
+
+    
+
+
+
+        <!-- <div class=" text-center">
+            <button type="submit" class="btn btn-danger" [disabled]="!addressForm.valid">save</button>
+        
+        </div>
+         -->
+
+
+</form>
+
+

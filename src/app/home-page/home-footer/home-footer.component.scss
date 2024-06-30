@@ -1,0 +1,64 @@
+footer{
+   
+    background-color: hsl(200, 12%, 95%);
+    padding-top: 30px;
+}
+.footer-top{
+    border-bottom: 1px solid hsl(0, 0%, 88%);
+    padding-bottom: 30px;
+}
+.icon-style{
+    width: 35px;
+    height: 35px;
+    background-color: hsl(0, 0%, 88%);
+    
+}
+
+
+.footer-bottom h5{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.8rem;
+    color: hsl(217, 28%, 9%);
+   margin-bottom:30px;
+   text-transform: capitalize;
+}
+.footer-bottom h5::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: var(--main-color);
+    margin-top: 10px;
+}
+
+.footer-bottom button
+{
+    background-color: var(--main-color);
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 19px;
+    padding: 8px 18px;
+
+}
+
+.footer-bottom .time-style {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 17px;
+
+}
+.text-font{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.footer-end{
+    background-color: hsl(217, 28%, 9%);
+    text-align: center;
+    padding-block: 8px;
+    color: white;
+}
+.footer-end a 
+{
+    color: var(--main-color);
+    text-decoration: none;
+}

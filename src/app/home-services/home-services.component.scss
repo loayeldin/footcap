@@ -1,0 +1,46 @@
+.services
+{
+    min-height: 150px;
+    
+}
+.img-shape{
+   
+background-color: var(--main-color);
+border-radius: 50%;
+
+min-width: 65px;
+height: 65px;
+border-radius: 50%;
+display: grid;
+place-items: center;
+
+}
+
+img{
+    filter: brightness(0) invert(1);
+    width: 43px;
+    height: 28px;
+}
+.service-content
+{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+h4
+{
+    // font-family: 'cursive', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+
+}
+p
+{
+    font-size: 14px;
+}
+span
+{
+    color: var(--main-color);
+}

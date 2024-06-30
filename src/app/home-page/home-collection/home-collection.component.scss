@@ -1,0 +1,82 @@
+.collection1
+{
+    background-image: url(../../../assets/collections/collection-1.jpg);
+    background-repeat: no-repeat;
+    min-height: 380px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-position: center;
+    padding-block: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.collection1 h3, .collection2 h3 , .collection3 h3
+{
+    
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 25px;
+
+
+}
+.collection1 button, .collection2 button, .collection3 button
+{
+    border: 1px solid #000000;
+    padding: 10px 25px;
+
+}
+
+.collection1 button:hover, .collection2 button:hover, .collection3 button:hover
+{
+   
+    background-color: rgba($color: #000000, $alpha: .1)
+
+}
+
+
+
+.collection2
+{
+    background-image: url(../../../assets/collections/collection-2.jpg);
+    min-height: 380px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-position: center;
+    padding-block: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+   
+
+}
+
+
+
+
+
+.collection3
+{
+    background-image: url(../../../assets/collections/collection-3.jpg);
+    background-repeat: no-repeat;
+    min-height: 380px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-position: center;
+    padding-block: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+   
+
+}
+@media (max-width:992px)
+    {
+        .container
+        {
+            min-width: 100% ;
+        }
+    }

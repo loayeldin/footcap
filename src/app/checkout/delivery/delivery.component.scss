@@ -1,0 +1,12 @@
+form
+{
+    width: 90%;
+  
+    margin: auto;
+}
+input:focus,.form-select:focus
+{
+    border-color: var(--second-color) !important;
+    box-shadow: 0 2px 2px 1px var(--second-color);
+
+}

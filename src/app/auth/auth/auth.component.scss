@@ -1,0 +1,68 @@
+.register
+{
+ 
+
+   
+ 
+   
+  
+}
+.register-box
+{
+   position: absolute;
+   top: 12%;
+   left: 50%;
+
+ 
+   transform: translateX(-50%);
+    width: 85%;
+    min-height: 80%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px hsla(0, 0%, 0%, 0.1);
+
+}
+.left
+{
+ 
+    
+    
+}
+.left h3
+{
+
+    text-transform: capitalize;
+    font-size: 23px;
+    margin-left: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+
+
+
+}
+.left img
+{
+   
+
+
+
+
+}
+.right
+{
+  display: flex;
+
+
+}
+.right-box
+{
+  
+    width: 80%;
+    margin: auto;
+    padding-top: 40px ;
+    padding-bottom: 40px;
+    
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    
+   
+  }

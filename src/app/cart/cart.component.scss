@@ -1,0 +1,42 @@
+.cart
+{
+    min-height:700px;
+    position: absolute;
+    top: 12%;
+    min-width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cart-box
+{
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 10px hsla(0, 0%, 0%, 0.1);
+
+    // display: flex;
+}
+th
+{
+    color: rgb(68, 68, 139);
+}
+.img-shape
+{
+    width: 130px;
+    height: 100px;
+}
+.quantity
+{
+    border-radius: 20px;
+    border: 1px solid rgb(201, 195, 195);
+    padding: 4px 12px;
+    
+ 
+}
+svg
+{
+    cursor: pointer;
+}
+.text-color{
+    color: rgb(68, 68, 139); 
+    font-weight: 500;
+}

@@ -1,0 +1,104 @@
+.admin{
+    background-color:#f2edf3 ;
+   
+    min-height: 100vh;
+    padding-bottom: 25px;
+}
+nav{
+    position: fixed;
+    width: 350px;
+    left: 0;
+    top: 0;
+    background-color: white;
+    height: 100%;
+    padding: 30px 0px;
+    transition: transform 0.5s ease; /* Add transition for smooth sliding */
+
+    transform: translateX(0); /* Default position */
+
+
+}
+.nav-hidden {
+    transform: translateX(-80%); /* Slide out of view */
+  }
+.navbar-menu
+{
+    background-color: var(--main-color);
+    padding: 5px;
+    // display: none;
+    display: inline-block;
+    cursor: pointer;
+ 
+}
+.admin-info .personal-img{
+
+
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+
+}
+.nav-link{
+    padding: 10px 10px;
+}
+.nav-link:hover{
+    background-color: rgba(247, 246, 246,.5);
+    cursor: pointer;
+}
+
+
+
+
+
+.right-side{
+    margin-left: 350px;
+    // background-color: white;
+    flex-grow: 1; /* Takes the remaining space */
+    // padding: 10px;
+    transition: margin 0.5s ease; /* Add transition for smooth sliding */
+
+
+}
+
+.right-side.collapsed {
+    margin-left: 70px; /* Full width when navbar is hidden */
+  }
+
+
+  .top-bar{
+    background-color: white;
+    padding: 10px;
+
+
+  }
+.top-bar-left .form-control{
+    border: none !important;
+   
+    width: 300px !important;
+}
+.top-bar-left .form-control:focus{
+    border: none !important;
+    box-shadow: none;
+}
+.top-bar-left .form-control::placeholder{
+   font-size: 14px !important;
+   text-transform: capitalize;
+}
+.top-bar-right .user-info{
+    cursor: pointer;
+}
+.top-bar-right .user-info .personal-img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+.active-link {
+    font-weight: bold;
+    color: #ff6e61;
+  }
+  .nav-link svg path {
+    fill: currentColor;
+  }

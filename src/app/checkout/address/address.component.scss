@@ -1,0 +1,33 @@
+
+
+// .checkout-box
+// {
+//     border-radius: 15px;
+//     padding: 20px;
+//     box-shadow: 0 2px 10px hsla(0, 0%, 0%, 0.1);
+// }
+form
+{
+    width: 95%;
+  
+    margin: auto;
+}
+input:focus,.form-select:focus
+{
+    border-color: var(--second-color) !important;
+    box-shadow: 0 2px 2px 1px var(--second-color);
+
+}
+
+select option:checked
+{
+    font-size: 16px !important;
+}
+option
+{
+    font-size: 16px !important;
+}
+select
+{
+    font-size: 12px !important;
+}

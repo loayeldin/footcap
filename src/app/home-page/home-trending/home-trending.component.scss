@@ -1,0 +1,162 @@
+
+.trending
+{
+    min-height: 600px;
+}
+.new-trend 
+{
+    background-image: url('../../../assets/trending/special-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 500px;
+    text-align: center;
+
+}
+.new-trend h3
+{
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.new-trend span{
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.special h3
+{
+   
+    text-transform: capitalize;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+}
+.special >h3::after
+{
+    content: "";
+    width: 75%;
+    height: 2px;
+    position: absolute;
+    background-color: hsl(0, 0%, 88%);;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25%;
+}
+
+.product-img
+{
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.product-icons
+{
+    position: absolute;
+    top: 5%;
+    right: -40%;
+    transition: .5s all;
+    cursor: pointer;
+}
+.product-icons .icon-box
+{
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 10px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    width: 38px;
+    transition: .5s all;
+}
+.product-icons .icon-box:hover
+{
+    background-color: var(--main-color);
+   
+}
+.product-icons .icon-box:hover svg path{
+    transition: .4s all;
+}
+.product-icons .icon-box:hover svg path {
+    fill: white; /* Change the SVG color on hover */
+}
+
+
+
+.product-info
+{
+    padding: 18px;
+}
+.product-info h3
+{
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s all;
+   
+
+
+}
+.product-content:hover h3
+{
+    color: var(--main-color);
+}
+.product-content:hover .product-icons
+{
+    top: 5%;
+    right: 8%;
+}
+.product-info .price
+{
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

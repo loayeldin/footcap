@@ -1,0 +1,139 @@
+
+
+            
+    <form [formGroup] = "addressForm" (ngSubmit)="submit()"  class="row g-3  " >
+
+        
+
+        
+
+        
+                    
+
+            <div class="form-group col-md-5">
+                <label  class="form-label text-capitalize">firt Name</label>
+                <input type="text" class="form-control " formControlName="firstName" >
+                <span *ngIf ='addressForm.get("firstName")?.invalid == true &&  addressForm.get("firstName")?.touched == true '
+                class="border border-danger p-2 d-block my-2 text-danger">
+
+                    FirstName required
+        
+            </span>
+            </div>
+
+
+            <div class="form-group col-md-5  offset-1">
+                <label  class="form-label text-capitalize">last name</label>
+                <input type="text" class="form-control " formControlName="lastName" >
+                <span *ngIf ='addressForm.get("lastName")?.invalid == true &&  addressForm.get("lastName")?.touched == true '
+                class="border border-danger p-2 d-block my-2 text-danger">
+
+                    LastName required
+        
+            </span>
+            </div>
+
+            <div class="form-group col-md-5  " >
+                <label  class="form-label text-capitalize">phone number</label>
+               
+                   
+
+                    <input type="tel" class="form-control  " formControlName="phoneNumber">
+                    <span *ngIf = "addressForm.get('phoneNumber')?.invalid == true && addressForm.get('phoneNumber')?.touched == true" class="border border-danger p-2 d-block my-2 text-danger"> 
+                
+                        <ng-container *ngFor="let error of addressForm.get('phoneNumber')?.errors | keyvalue">
+                            <ng-container *ngIf="error.key === 'required'">
+                              phone is required.
+                            </ng-container>
+                            <ng-container *ngIf="error.key === 'pattern'">
+                                Invalid phone format.
+                                ex(+20)
+                            </ng-container>
+                            
+                          
+                          </ng-container>
+                    </span>
+               
+            </div>
+
+
+
+
+            <div class="form-group col-md-5  offset-1 ">
+                <label  class="form-label text-capitalize">additional phone number</label>
+               
+                  
+
+                    <input type="tel" class="form-control ms-2 " formControlName="additionalPhoneNumber" >
+                    
+                    <span *ngIf = "addressForm.get('additionalPhoneNumber')?.invalid == true && addressForm.get('additionalPhoneNumber')?.touched == true" class="border border-danger p-2 d-block my-2 text-danger"> 
+                
+                        <ng-container *ngFor="let error of addressForm.get('additionalPhoneNumber')?.errors | keyvalue">
+                          
+                            <ng-container *ngIf="error.key === 'pattern'">
+                                Invalid phone format.
+                                ex(+20)
+                            </ng-container>
+                            
+                         
+                          </ng-container>
+                    </span>
+
+            </div>
+
+    
+
+
+            <div class="form-group col-md-11">
+                <label class="form-label text-capitalize">Street address</label>
+                <input type="text" class="form-control " formControlName="streetAdress" >
+                <span *ngIf ='addressForm.get("streetAdress")?.invalid == true &&  addressForm.get("streetAdress")?.touched == true '
+                    class="border border-danger p-2 d-block my-2 text-danger">
+
+                    StreetAdress required
+        
+                </span>
+            </div>
+
+
+            <div class="form-group col-md-5">
+                <label class="form-label text-capitalize">city</label>
+                <input type="text" class="form-control " formControlName="city" >
+                <span *ngIf ='addressForm.get("city")?.invalid == true &&  addressForm.get("city")?.touched == true '
+                    class="border border-danger p-2 d-block my-2 text-danger">
+
+                    city required
+        
+                </span>
+            </div>
+
+            
+            <div class="form-group col-md-5 offset-1">
+                <label  class="form-label text-capitalize">District</label>
+                <input type="text" class="form-control " formControlName="District">
+                <span *ngIf ='addressForm.get("District")?.invalid == true &&  addressForm.get("District")?.touched == true '
+                    class="border border-danger p-2 d-block my-2 text-danger">
+
+                    District required
+        
+                </span>
+            </div>
+
+
+
+
+
+        
+
+
+
+            <div class=" text-center">
+                <button type="submit" class="btn btn-danger" [disabled]="!addressForm.valid">save</button>
+            
+            </div>
+            
+    
+
+    </form>
+
+
