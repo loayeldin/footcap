@@ -71,7 +71,7 @@ export class AuthService {
   {
     this.user.next(<User>({}));
     this.loggedIn.next(false)
-
+    this.navbarVisible.next(true)
     localStorage.clear()
     this.router.navigate(['/auth']) // auth
   }

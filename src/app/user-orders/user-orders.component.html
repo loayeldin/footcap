@@ -1,0 +1,75 @@
+<div class="all">
+    <div class="mycontainer">
+        
+        <div  class="row">
+            <div class="cart-header">
+                <div style="padding: 30px 0 20px 70px;">
+                    <h2 class="text-capitalize">orders</h2>
+                </div>
+            </div>
+            
+            <div  class="col-lg-12 shopping-cart" *ngFor="let order of orders">
+                <div class="mycontainer2" >
+                        
+                    
+    
+                    
+                    <div class="row" >
+                        
+                        <div  class=" font col-md-4 default-first-card  mt-2 ">
+                            
+                            <p><span>User:</span> {{ order.addressData.firstName }} {{ order.addressData.lastName }} </p>
+                            <p><span>User Email : </span> {{userData.email}}</p>
+                            <p><span>Total Price : </span> {{ order.totalPrice }} L.E</p>
+                            <p><span>Phone Number : </span> {{ order.addressData.phoneNumber }}</p>
+                            <p><span>Additional Phone Number : </span> {{ order.addressData.additionalPhoneNumber }}</p>
+                            <p><span>Shipping Address: </span> {{ order.addressData.city }} , {{ order.addressData.District }}, {{ order.addressData.streetAdress }}  </p>
+                            <p><span>Payment Method:</span> {{ order.paymentMethod }}</p>
+                            <p>Created At: {{ order.createdAt}}</p>
+                            
+                         </div>
+                         
+                         <div class=" default-first-card  col-md-8 mt-2">
+                            <h4>Items:</h4>
+                            <table>
+                              <thead>
+                                <tr>
+                                  <th>Name</th>
+                                  <th>Quantity</th>
+                                  <th>Price</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr *ngFor="let item of order.products">
+                                  <td>{{ item.title }}</td>
+                                  <td>{{ item.quantity }}</td>
+                                  <td>{{ item.totalPrice }}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                           
+                          </div>
+                          
+                        
+                      </div>
+
+                      <div class="text-center">
+                        <button class="btn btn-danger " >Cancel Order</button>
+                      </div>
+                      
+                      
+                    
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    
+
+          
+            
+            
+          
+      

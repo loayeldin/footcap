@@ -34,6 +34,10 @@ const routes: Routes = [
     loadChildren:()=> import('./cart/cart.module')
     .then(m=>m.CartModule)},
 
+    {path:'orders',
+    loadChildren:()=> import('./user-orders/user-orders.module')
+    .then(m=>m.UserOrdersModule)},
+
 
 
   { path: 'checkout',

@@ -211,4 +211,17 @@ export class HomeService {
 
   }
 
+
+  getUserOrders(userId:any):Observable<any>
+  {
+    return this.http.get('https://e-commerce-acec8-default-rtdb.firebaseio.com/users.json').pipe(
+      map((cartData:any )=>{
+        const existingUserOrders = cartData.find((data:any)=> data.userInfo.id === userId)
+        
+          return existingUserOrders? existingUserOrders.orders : []
+       
+      })
+    )
+  }
+
 }

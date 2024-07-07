@@ -1,6 +1,7 @@
 import { Component, ElementRef, Renderer2 } from '@angular/core';
 import { AuthService } from '../auth/auth.service';
 import { Router } from '@angular/router';
+import { HomeService } from '../services/home.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,8 +11,12 @@ import { Router } from '@angular/router';
 export class NavbarComponent {
 
 
-  constructor(private router:Router,private authService:AuthService,private renderer: Renderer2, private el: ElementRef) { }
+  constructor(private homeService:HomeService,private router:Router,private authService:AuthService,private renderer: Renderer2, private el: ElementRef) { }
   loggedIn!:any
+  userData!:any
+  cartCount!:any
+  cartData!:any
+  ordersData!:any
 ngOnInit()
 {
   this.authService.loggedIn.subscribe(data=>{
@@ -19,6 +24,31 @@ ngOnInit()
     this.loggedIn = data
     
   })
+
+
+  this.authService.user.subscribe(userdata=>{
+
+    console.log(userdata);
+    this.userData = userdata
+    this.homeService.getUserCart(this.userData.id).subscribe(cartData=>{
+      console.log(cartData);
+      this.cartData = cartData
+      this.cartCount = cartData.length
+      console.log(this.cartCount);
+      
+      
+    })
+
+
+    this.homeService.getUserOrders(this.userData.id).subscribe(ordersdata=>{
+      this.ordersData = ordersdata
+      console.log(this.ordersData);
+      
+    })
+    
+  })
+
+  
 }
 
   openNav() {
