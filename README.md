@@ -5,8 +5,7 @@ The e-commerce project you're working on includes essential functionalities for 
 
 # Admin Account
 
-    email:loay66@gmail.com 
-    password:Loayelden1$
+   
     
 # ECommerceFootcap
 
